@@ -1,0 +1,34 @@
+{
+   "name": "Demo Docs",
+   "image": "authsec/sphinx:1.0.7",
+   "forwardPorts": [
+      8008
+],
+"containerEnv": {
+    "HTTP_SERVER_PORT": "8008"
+},
+"customizations": {
+    "vscode": {
+        "extensions": [
+            "ms-python.python",
+            "ms-toolsai.jupyter",
+            "jebbs.plantuml",
+            "trond-snekvik.simple-rst",
+            "swyddfa.esbonio",
+            "mechatroner.rainbow-csv",
+            "lextudio.restructuredtext",
+            "useblocks.sphinx-needs-vscode"
+        ],
+        "settings": {
+            "python-envs.alwaysUseUv": true,
+            "restructuredtext.builtDocumentationPath": "${workspaceRoot}/build/html",
+            "restructuredtext.confPath": "${workspaceFolder}/source",
+            "restructuredtext.updateOnTextChanged": "true",
+            "restructuredtext.updateDelay": 1000,
+            "python.pythonPath": "/opt/venv/bin/python"
+        }
+    }
+},
+"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/docs,type=bind",
+"workspaceFolder": "/workspaces/docs"
+}

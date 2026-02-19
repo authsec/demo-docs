@@ -1,0 +1,4 @@
+@startuml Example Diagram
+Alice -> Bob: Hello Bob, how are you?
+Bob --> Alice: I am good, thanks!
+@enduml
