@@ -1,0 +1,92 @@
+.wy-nav-content {
+   max-width: 100% !important;
+}
+
+.wy-side-nav-search {
+   background-color: #821DE4;
+}
+
+.wy-table-responsive table td {
+   white-space: normal;
+}
+
+.bd-main .bd-content .bd-article-container {
+   max-width: 95%;  /* default is 60em */
+}
+
+.bd-page-width {
+   max-width: 95%;  /* default is 88rem */
+ }
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.bd-sidebar-primary::-webkit-scrollbar {
+   display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.bd-sidebar-primary {
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+   width: fit-content;
+   padding-right: 3em;
+}
+
+.rst-content .toctree-wrapper>p.caption[data-theme=light], h1 {
+   margin-top: 0;
+   font-weight: 700;
+   font-family: 'Orbitron', Georgia,Arial,sans-serif;
+   color: #41A7BD;
+   
+}
+
+.rst-content .toctree-wrapper>p.caption[data-theme=light], h2, h3, h4, h5, h6, dt, legend {
+   margin-top: 1em;
+   font-weight: 700;
+   font-family: 'Orbitron', Georgia,Arial,sans-serif;
+   color: #41A7BD;
+   
+}
+
+.rst-content .toctree-wrapper>p.caption[data-theme=light], dt, legend {
+   margin-top: -.7em;
+   font-weight: 400;
+   font-family: 'Orbitron', Georgia,Arial,sans-serif;
+   color: #41A7BD;
+   
+}
+
+
+svg.fa-arrow-up-right-from-square {
+    margin-right: .5ex;
+}
+
+
+pre {
+    text-wrap-mode: wrap;
+}
+
+p.rubric {
+   font-weight: 700;
+   font-family: 'Orbitron', Georgia,Arial,sans-serif;
+   color: #41A7BD;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../fonts/Orbitron-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

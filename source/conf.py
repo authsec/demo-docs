@@ -1,10 +1,11 @@
 # conf.py
 
 import os
+from datetime import date
 
-project = 'My Demo'
-copyright = '2026, Siegfried Sphinx'
-author = 'Siegfried Sphinx'
+project = 'Demo Docs'
+author = 'Dan Demo'
+copyright = f'{date.today().year}, {author}'
 version = '0.0.1'
 release = '0.0.1'
 
@@ -22,8 +23,27 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 language = 'en'
-html_theme = 'alabaster'
 todo_include_todos = True  # Make sure todos are visible
+
+###################################
+#    HTML OUTPUT CONFIGURATION    #
+###################################
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+html_theme = 'pydata_sphinx_theme'
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+
+# See: https://docs.readthedocs.io/en/latest/guides/adding-custom-css.html
+html_css_files = [
+    'css/custom.css',
+    'css/roles.css'
+]
 
 #################################
 #     Draw.io configuration     #
