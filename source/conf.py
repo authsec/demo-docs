@@ -3,7 +3,7 @@
 import os
 from datetime import date
 
-project = 'Demo Docs'
+project = 'Doc Dash'
 author = 'Dan Demo'
 copyright = f'{date.today().year}, {author}'
 version = '0.0.1'
@@ -17,7 +17,10 @@ extensions = [
     'sphinxcontrib.bibtex',
     'sphinx_diagrams',
     'sphinxcontrib.drawio',
-    'sphinxcontrib.plantuml'
+    'sphinxcontrib.plantuml',
+    'sphinxcontrib.httpdomain',
+    'sphinxcontrib.openapi',
+    'sphinxcontrib.icon'
 ]
 
 templates_path = ['_templates']
@@ -72,7 +75,7 @@ latex_toplevel_sectioning = "part"
 latex_show_pagerefs = True
 latex_show_urls = 'footnote'
 latex_table_style = ['booktabs']
-latex_logo = '_templates/latex/doc-logo-small.png'
+latex_logo = '_templates/latex/doc-dash.png'
 
 latex_additional_files = [
     # The 2 empty style files are required, they prevent a compile error if you're using KOMA classes.
@@ -80,7 +83,7 @@ latex_additional_files = [
     '_templates/latex/sphinxlatexstyleheadings.sty', 
     '_templates/latex/sphinxlatexstylepage.sty',
     'outpdfname.xmpdata',
-    '_templates/latex/doc-logo-small.png'
+    '_templates/latex/doc-dash.png'
 ]
 
 # 3. DEFINE PREAMBLE HERE
@@ -90,7 +93,7 @@ MY_PREAMBLE = f_preamble.read()
 latex_elements = {
     'fncychap': '',
     'tableofcontents': '\\tableofcontents',
-    'sphinxsetup': 'hmargin={1.5cm,2.5cm}, vmargin={1.5cm,2cm}, marginpar=2.5cm',
+    'sphinxsetup': 'hmargin={1.5cm,2.5cm}, vmargin={2cm,2cm}, marginpar=2.5cm',
     # Inject the preamble variable we defined above
     'preamble': MY_PREAMBLE,
 
@@ -118,3 +121,17 @@ latex_elements = {
 latex_documents = [
     ('index', 'outpdfname.tex', project, author, 'manual'),
 ]
+
+###
+# START EXTRA CONFIGURATION TO PREVENT EXTENSIONS FROM OVERRIDING LATEX ENGINE
+###
+def disable_xetex_force(app, config):
+    config.latex_engine = 'lualatex'
+
+def setup(app):
+    # This connects to the 'config-inited' event and forces lualatex back
+    # priority 999 ensures it runs after most extensions
+    app.connect('config-inited', disable_xetex_force, priority=999)
+###
+# END EXTRA CONFIGURATION TO PREVENT EXTENSIONS FROM OVERRIDING LATEX ENGINE
+###
