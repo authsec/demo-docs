@@ -1,5 +1,6 @@
 % --- START PREAMBLE.TEX.INPUT  ---
 \usepackage{calc}
+\usepackage{pdflscape}
 \usepackage[automark]{scrlayer-scrpage}
 \clearpairofpagestyles
 \ohead{\headmark}
