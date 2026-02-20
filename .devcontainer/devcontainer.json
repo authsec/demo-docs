@@ -1,6 +1,6 @@
 {
    "name": "Demo Docs",
-   "image": "authsec/sphinx:1.0.7",
+   "image": "authsec/sphinx:1.0.8",
    "forwardPorts": [
       8008
 ],
@@ -25,7 +25,8 @@
             "restructuredtext.confPath": "${workspaceFolder}/source",
             "restructuredtext.updateOnTextChanged": "true",
             "restructuredtext.updateDelay": 1000,
-            "python.pythonPath": "/opt/venv/bin/python"
+            "python.pythonPath": "/opt/venv/bin/python",
+            "editor.tabSize": 3
         }
     }
 },
