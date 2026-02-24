@@ -90,3 +90,11 @@ p.rubric {
   font-weight: 700;
   font-style: normal;
 }
+
+.my-custom-list ul {
+   font-family: 'Orbitron', Georgia,Arial,sans-serif;
+   list-style-type: square;
+   background: #ffd175;
+   padding: 10px;
+}
+

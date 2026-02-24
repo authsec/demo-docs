@@ -20,8 +20,28 @@ extensions = [
     'sphinxcontrib.plantuml',
     'sphinxcontrib.httpdomain',
     'sphinxcontrib.openapi',
-    'sphinxcontrib.icon'
+    'sphinxcontrib.icon',
+    'sphinxcontrib.xlink',
 ]
+
+# Path to your .xlink files
+xlink_directory = 'xlinks'
+
+# Inline role: :xlink:`key` (Default: True)
+xlink_render_link_icon = True
+
+# Directive: .. xlink-list:: (Default: False)
+xlink_list_render_link_icon = False
+
+# xlink_latex_show_urls = 'inline'
+xlink_check_links = False
+
+# Configure allowed tags and their display names for xlink directives
+xlink_allowed_tags = {
+    'threat-model': 'Threat Model',
+    'architecture': 'Architecture Notes',
+    'api': 'API Specifications'
+}
 
 templates_path = ['_templates']
 exclude_patterns = []
