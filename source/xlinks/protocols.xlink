@@ -1,0 +1,8 @@
+# xlink-section-name: Protocols of the Internet
+wikipedia-definition-file-transfer-protocol-ftp :: File Transfer Protocol (FTP) :: https://en.wikipedia.org/wiki/File_Transfer_Protocol
+wikipedia-definition-file-transfer-protocol-secure-ftps :: File Transfer Protocol Secure (FTPS) :: https://en.wikipedia.org/wiki/FTPS
+wikipedia-definition-ssh-file-transfer-protocol :: SSH File Transfer Protocol (SFTP) :: https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol :: threat-model
+wikipedia-definition-hypertext-transfer-protocol-http :: Hypertext Transfer Protocol (HTTP) :: https://en.wikipedia.org/wiki/HTTP
+wikipedia-definition-hypertext-transfer-protocol-https :: Hypertext Transfer Protocol Secure (HTTPS) :: https://en.wikipedia.org/wiki/HTTPS
+mozilla-reference-hypertext-transfer-protocol-http :: HTTP: Hypertext Transfer Protocol :: https://developer.mozilla.org/en-US/docs/Web/HTTP
+wiki new hypertext with a really really long long name, that must line break :: HTTP: Hypertext Transfer Protocol :: https://developer.mozilla.org/en-US/docs/Web/HTTP

@@ -11,6 +11,7 @@ Special icon font :icon:`fa-solid fa-folder`
 .. toctree::
     :hidden:
 
+    xlinks/xlinks
     diagrams/diagrams
     snippets/snippets
     apidocs/apidocs
